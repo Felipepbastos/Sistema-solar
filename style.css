@@ -1,0 +1,221 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.solar-system{
+    position: relative;
+    width: 800px;
+    height: 800px;
+}
+
+.planet {
+    position: absolute;
+    top: 48%;
+    left: 48%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);   
+}
+
+.sun {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#f09819, #ff512f);
+    border-radius: 50%;
+    box-shadow: -4px 2px 56px orange;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.orbit{
+    border: 1px dotted #dd9;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: transparent;
+}
+
+.mercury-orbit{
+    width: 150px;
+    height: 150px;
+}
+
+.mercury{
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    animation: orbit-mercury 7.2s linear infinite;
+}
+
+@keyframes orbit-mercury {
+    from {
+        transform: rotate(0deg) translateX(75px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(75px) rotate(-360deg);
+    }
+}
+
+
+
+.venus-orbit{
+    width: 250px;
+    height: 250px;
+}
+
+.venus{
+    width:20px;
+    height:20px;
+    background-color: orange;
+    animation: orbit-venus 18s linear infinite;
+}
+
+@keyframes orbit-venus {
+    from {
+        transform: rotate(0deg) translateX(125px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(125px) rotate(-360deg);
+    }
+}
+
+
+.earth-orbit {
+    width: 350px;
+    height: 350px;
+}
+
+.earth {
+    width: 25px;
+    height: 25px;
+    background-color: blue;
+    animation: orbit-earth 30s linear infinite; /* Ajustar a velocidade da órbita da Terra */
+}
+
+@keyframes orbit-earth {
+    from {
+        transform: rotate(0deg) translateX(175px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(175px) rotate(-360deg);
+    }
+}
+
+.mars-orbit{
+    width: 450px;
+    height: 450px;
+}
+
+.mars {
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    animation: orbit-mars 56.4s linear infinite;
+}
+
+@keyframes orbit-mars {
+    from {
+        transform: rotate(0deg) translateX(225px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(225px) rotate(-360deg);
+    }
+}
+
+
+.jupiter-orbit{
+    width: 600px;
+    height: 600px;
+}
+
+.jupiter{
+    width: 30px;
+    height: 30px;
+    background-color: peru;
+    animation: orbit-jupiter 355.8s linear infinite;
+}
+
+@keyframes orbit-jupiter {
+    from {
+        transform: rotate(0deg) translateX(300px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(300px) rotate(-360deg);
+    }
+}
+
+
+.saturn-orbit{
+    width: 700px;
+    height: 700px;
+}
+
+.saturn{
+    width: 30px;
+    height: 30px;
+    background-color: moccasin;
+    animation: orbit-saturn 883.8s linear infinite;
+}
+
+@keyframes orbit-saturn {
+    from {
+        transform: rotate(0deg) translateX(350px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(350px) rotate(-360deg);
+    }
+}
+
+.uranus-orbit{ 
+    width: 800px;
+    height: 800px;
+}
+
+.uranus{
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    animation: orbit-uranus 2520.3s linear infinite;
+}
+
+@keyframes orbit-uranus {
+    from {
+        transform: rotate(0deg) translateX(400px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(400px) rotate(-360deg);
+    }
+}
+
+.neptune-orbit{
+    width: 900px;
+    height: 900px;
+}
+
+.neptune{
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    animation: orbit-neptune 4943.7s linear infinite;
+}
+
+
+@keyframes orbit-neptune {
+    from {
+        transform: rotate(0deg) translateX(450px) rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg) translateX(450px) rotate(-360deg);
+    }
+}
